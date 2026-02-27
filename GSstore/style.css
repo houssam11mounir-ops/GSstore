@@ -1,0 +1,121 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#000;
+  color:white;
+  body {
+  background: linear-gradient(120deg, #111 0%, #222 100%);
+}
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#111;
+}
+.about h2{
+  position:relative;
+  color:rgb(51, 192, 192);
+}
+
+.logo{
+  font-size:35px;
+  color:#0ff;
+}
+
+nav a{
+  color:white;
+  margin:15px;
+  text-decoration:none;
+}
+
+.slider{
+  text-align:center;
+  padding:40px;
+}
+
+.slider img{
+  width:70%;
+  max-height:350px;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.products{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:60px;
+}
+
+.card{
+  background:#111;
+  padding:20px;
+  border-radius:20px;
+  transition:0.5s;
+}
+
+.card:hover{
+  transform:scale(1.1) rotateY(15deg);
+  .card:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0,255,255,0.3);
+}
+}
+
+.card img{
+  width:200px;
+  border-radius:15px;
+}
+
+.about{
+  text-align:center;
+  padding:100px 40px;
+  background:#050505;
+}
+
+.about p{
+  max-width:600px;
+  margin:auto;
+  line-height:1.6;
+  opacity:0.8;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:20px;
+  transition:0.5s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1) rotateY(10deg);
+}
+
+about h2{
+  position: relative;
+  color: whitesmoke;
+}
+
+
+footer{
+  text-align:center;
+  padding:80px;
+}
+
+.glow{
+  font-size:70px; 
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{color:rgb(16, 210, 188); text-shadow:0 0 10px #0ff}
+  to{color:white; text-shadow:0 0 40px #0ff}
+}
